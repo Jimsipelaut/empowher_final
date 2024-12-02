@@ -1,215 +1,44 @@
-/* Base styles (mobile-first approach) */
-body {
-  font-size: 16px;
-  background-size: cover;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-p {
-  font-size: 1rem;
-}
-
-.card {
-  margin: 10px;
-}
-
-#home,
-#vision,
-#services {
-  padding-top: 30px;
-  margin-top: 0;
-}
-
-.image-container {
-  flex-direction: column;
-  align-items: center;
-  margin-right: 0;
-  margin-left: 0;
-  height: auto;
-}
-
-.slogan {
-  margin-left: 0;
-  align-items: center;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.slogan h1 {
-  font-size: 2rem;
-}
-
-.slogan p {
-  font-size: 1rem;
-}
-
-.custom-image {
-  width: 100%;
-  max-width: 300px;
-  margin-top: 1rem;
-}
-
-.about-cards {
-  flex-direction: column;
-  align-items: center;
-}
-
-.mission,
-.vision {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.description-main {
-  padding: 1rem;
-  max-height: none;
-}
-
-.portfolio-grid {
-  grid-template-columns: repeat(2, 1fr);
-  padding: 1rem;
-}
-
-.portfolio-item {
-  height: 120px;
-}
-
-.prev-btn,
-.next-btn {
-  padding: 0.3rem 0.8rem;
-  font-size: 0.8rem;
-}
-
-.wrapper .page h2 {
-  font-size: 1.2em;
-}
-
-.service-content {
-  font-size: 16px;
-  padding: 1rem;
-}
-
-.member {
-  width: 100%;
-}
-
-.navbar-nav-wrapper {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 0 0 15px 15px;
-  z-index: 999;
-}
-
-.navbar-nav-wrapper.active {
-  display: flex;
-}
-
-.navbar-toggle {
-  display: flex;
-}
-
-/* Small phones (360px and up) */
-@media (min-width: 360px) {
+/* disini muali media query */
+@media (max-width: 968px) {
   body {
-    font-size: 14px;
-  }
-
-  .slogan h1 {
-    font-size: 1.8rem;
-  }
-
-  .member {
-    width: 45%;
-  }
-
-  .wrapper .page h2 {
-    font-size: 1.3em;
-  }
-
-  .service-content {
-    font-size: 14px;
-  }
-}
-
-/* Large phones (428px and up) */
-@media (min-width: 428px) {
-  body {
-    font-size: 15px;
-  }
-
-  .slogan h1 {
-    font-size: 2rem;
-  }
-
-  .custom-image {
-    max-width: 350px;
-  }
-
-  .portfolio-item {
-    height: 140px;
-  }
-}
-
-/* Tablets (768px and up) */
-@media (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-
-  .slogan h1 {
-    font-size: 2.5rem;
-  }
-
-  .custom-image {
-    max-width: 400px;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .portfolio-item {
-    height: 160px;
-  }
-
-  .member {
-    width: 30%;
+    font-size: 1.4rem;
   }
 
   .navbar-nav .nav-link {
     font-size: 18px;
   }
-}
-
-/* Larger tablets and small desktops (992px and up) */
-@media (min-width: 992px) {
-  body {
-    font-size: 18px;
-  }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  #home,
+  #vision,
+  #services {
+    padding-top: 50px;
+    margin-top: -50px;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .slogan {
+    margin-left: 0;
+    align-items: center;
+    margin-top: 2rem;
   }
 
   .slogan h1 {
@@ -217,30 +46,177 @@ p {
   }
 
   .custom-image {
-    max-width: 450px;
+    width: 80%;
+    margin-top: 2rem;
+  }
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission,
+  .vision {
+    max-width: 100%;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .description-main {
+    max-height: none; /* Updated for compatibility */
   }
 
   .portfolio-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Changed to match desktop view */
+    max-width: 100%;
+    padding: 1.5rem;
   }
 
   .portfolio-item {
-    height: 180px;
-  }
-
-  .member {
-    width: 17%;
-  }
-
-  .navbar-nav-wrapper {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background-color: transparent;
-  }
-
-  .navbar-toggle {
-    display: none;
+    height: auto; /* Adjusted to allow flexibility */
   }
 }
 
+@media (max-width: 428px) {
+  body {
+    background-size: 100%;
+  }
+  .slogan h1 {
+    font-size: 2rem;
+  }
+
+  .slogan p {
+    font-size: 1rem;
+  }
+
+  .custom-image {
+    width: 100%;
+    max-width: 300px;
+  }
+  .description-main {
+    padding: 1rem;
+  }
+
+  .mission,
+  .vision {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .main-portoflio h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 4.75rem;
+    margin-top: 10rem;
+  }
+  .portfolio-grid {
+    padding: 1rem;
+  }
+
+  .portfolio-item {
+    height: 120px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .wrapper .page h2 {
+    font-size: 1em; 
+}  
+  .service-content {
+  font-size: 20px; 
+  padding: 1rem; 
+    }
+}
+@media (min-width: 360px)
+{
+  .member {
+    width: 45%;
+}
+  .wrapper .page h2 {
+    font-size: 1.5em; 
+}  
+  .service-content {
+  font-size: 20px; 
+  padding: 1rem; 
+    }
+  }
+
+
+
+@media (min-width: 460px) {
+  .member {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .member {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .member {
+    width: 17%;
+  }
+}
+@media (max-width: 414px) {
+  body {
+    background-size: 100%;
+  }
+  .slogan h1 {
+    font-size: 2rem;
+  }
+
+  .slogan p {
+    font-size: 1rem;
+  }
+
+  .custom-image {
+    width: 100%;
+    max-width: 300px;
+  }
+  .description-main {
+    padding: 1rem;
+  }
+
+  .mission,
+  .vision {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .main-portoflio h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-top: 10rem;
+  }
+  .portfolio-grid {
+    padding: 1rem;
+  }
+
+  .portfolio-item {
+    height: 120px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .wrapper .page h2 {
+    font-size: 1em; 
+}  
+  .service-content {
+  font-size: 20px; 
+  padding: 1rem; 
+    }
+}

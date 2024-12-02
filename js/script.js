@@ -1,4 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.querySelector('.custom-navbar');
   const navbarToggle = document.getElementById('navbar-toggle');
   const navbarNavWrapper = document.querySelector('.navbar-nav-wrapper');

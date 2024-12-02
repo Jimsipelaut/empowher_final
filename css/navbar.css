@@ -76,3 +76,24 @@
 }
 
 /* Media query untuk layar kecil */
+@media (max-width: 768px) {
+  .navbar-nav-wrapper {
+    display: none; /* Sembunyikan navbar default */
+    flex-direction: column; /* Tampilkan dropdown */
+    position: absolute; /* Posisi absolut untuk dropdown */
+    top: 80px; /* Jarak dari navbar */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang dropdown */
+    border-radius: 0 0 30px 30px; /* Radius */
+    z-index: 999; /* Pastikan di atas elemen lain */
+  }
+
+  .navbar-nav-wrapper.active {
+    display: flex; /* Tampilkan dropdown ketika aktif */
+  }
+
+  .navbar-toggle {
+    display: flex; /* Tampilkan ikon burger */
+  }
+}
