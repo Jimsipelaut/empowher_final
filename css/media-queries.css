@@ -110,7 +110,7 @@
   .main-portoflio h2 {
     text-align: left;
     margin-bottom: 1rem;
-    margin-left: 4.75rem;
+    margin-left: 2.5rem;
     margin-top: 10rem;
   }
   .portfolio-grid {
@@ -194,9 +194,9 @@
   }
 
   .main-portoflio h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 1rem;
-    margin-left: 3rem;
+    margin-right: 3rem;
     margin-top: 10rem;
   }
   .portfolio-grid {
