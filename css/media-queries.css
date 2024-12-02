@@ -1,47 +1,176 @@
-/* Media Queries */
+/* disini muali media query */
+@media (max-width: 968px) {
+  body {
+    font-size: 1.4rem;
+  }
 
-/* Mobile Devices */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px; /* Adjust font size */
-        padding: 10px; /* Add padding */
-    }
-    .navbar {
-        display: block; /* Stack navbar items */
-        flex-direction: column; /* Stack navbar items vertically */
-        align-items: center; /* Center items */
-    }
-    .container {
-        width: 100%; /* Full width for containers */
-        padding: 0; /* Remove padding */
-        display: flex; /* Use flexbox for layout */
-        flex-direction: column; /* Stack items vertically */
-        margin: 0; /* Remove margins */
-    }
-    .section {
-        margin-bottom: 20px; /* Add space between sections */
-    }
-    img {
-        max-width: 100%; /* Ensure images are responsive */
-        height: auto; /* Maintain aspect ratio */
-    }
-    h1, h2, h3 {
-        font-size: 1.5em; /* Adjust heading sizes */
-    }
-    button {
-        padding: 12px; /* Increase button size for touch */
-        font-size: 16px; /* Ensure text is readable */
-        width: 100%; /* Full width for buttons */
-        margin-top: 10px; /* Space above buttons */
-    }
+  .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  #home,
+  #vision,
+  #services {
+    padding-top: 50px;
+    margin-top: 0; /* Menghindari margin negatif */
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .slogan {
+    margin-left: 0;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .slogan h1 {
+    font-size: 3rem;
+  }
+
+  .custom-image {
+    width: 80%;
+    margin-top: 2rem;
+  }
+
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission,
+  .vision {
+    max-width: 100%;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .description-main {
+    max-height: none; /* Updated for compatibility */
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* Tablets */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-    /* Add tablet-specific styles here */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .portfolio-item {
+    height: auto; /* Adjusted to allow flexibility */
+  }
 }
 
-/* Desktops */
-@media only screen and (min-width: 769px) {
-    /* Add desktop-specific styles here */
+@media (max-width: 428px) {
+  body {
+    background-size: 100%;
+  }
+  
+  .slogan h1 {
+    font-size: 2rem;
+  }
+
+  .slogan p {
+    font-size: 1rem;
+  }
+
+  .custom-image {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .description-main {
+    padding: 1rem;
+  }
+
+  .mission,
+  .vision {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .main-portoflio h2 {
+    text-align: center; /* Ubah ke center untuk tampilan lebih baik */
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-top: 10rem;
+  }
+
+  .portfolio-grid {
+    padding: 1rem;
+  }
+
+  .portfolio-item {
+    height: 120px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .wrapper .page h2 {
+    font-size: 1em; 
+  }
+
+  .service-content {
+    font-size: 20px; 
+    padding: 1rem; 
+  }
+}
+
+@media (min-width: 360px) {
+  .member {
+    width: 45%;
+  }
+  
+  .wrapper .page h2 {
+    font-size: 1.5em; 
+  }
+
+  .service-content {
+    font-size: 20px; 
+    padding: 1rem; 
+  }
+}
+
+@media (min-width: 460px) {
+  .member {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .member {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .member {
+    width: 17%;
+  }
 }
