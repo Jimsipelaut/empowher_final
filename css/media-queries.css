@@ -1,3 +1,5 @@
+/* Media Queries */
+
 /* Mobile Devices */
 @media only screen and (max-width: 600px) {
     body {
@@ -10,6 +12,28 @@
     .container {
         width: 100%; /* Full width for containers */
         padding: 0; /* Remove padding */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
     }
-    /* Add more mobile-specific styles as needed */
+    img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+    h1, h2, h3 {
+        font-size: 1.5em; /* Adjust heading sizes */
+    }
+    button {
+        padding: 12px; /* Increase button size for touch */
+        font-size: 16px; /* Ensure text is readable */
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* Add tablet-specific styles here */
+}
+
+/* Desktops */
+@media only screen and (min-width: 769px) {
+    /* Add desktop-specific styles here */
 }
