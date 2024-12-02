@@ -97,3 +97,91 @@
     display: flex; /* Tampilkan ikon burger */
   }
 }
+
+@media (max-width: 360px) {
+  .navbar-nav-wrapper {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Jarak lebih kecil */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85); /* Sedikit lebih gelap */
+    border-radius: 0 0 20px 20px; /* Radius lebih kecil */
+    z-index: 999;
+  }
+
+  .navbar-nav-wrapper.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 390px) {
+  .navbar-nav-wrapper {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px; /* Sedikit lebih besar */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 0 25px 25px;
+    z-index: 999;
+  }
+
+  .navbar-nav-wrapper.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 414px) {
+  .navbar-nav-wrapper {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 78px; /* Jarak yang lebih sesuai */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 0 30px 30px;
+    z-index: 999;
+  }
+
+  .navbar-nav-wrapper.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 428px) {
+  .navbar-nav-wrapper {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Sesuai dengan ukuran default */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 0 30px 30px;
+    z-index: 999;
+  }
+
+  .navbar-nav-wrapper.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
