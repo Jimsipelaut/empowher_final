@@ -1,132 +1,15 @@
-/* disini muali media query */
-@media (max-width: 992px) {
-  body {
-    font-size: 1.4rem;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }
-
-  .card {
-    margin: 10px;
-  }
-
-  #home,
-  #vision,
-  #services {
-    padding-top: 50px;
-    margin-top: -50px;
-  }
-
-  .image-container {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0;
-    margin-left: 0;
-    height: auto;
-  }
-
-  .slogan {
-    margin-left: 0;
-    align-items: center;
-    margin-top: 2rem;
-  }
-
-  .slogan h1 {
-    font-size: 3rem;
-  }
-
-  .custom-image {
-    width: 80%;
-    margin-top: 2rem;
-  }
-
-  .about-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mission,
-  .vision {
-    max-width: 100%;
-    width: 90%;
-    margin-bottom: 1rem;
-  }
-
-  .description-main {
-    max-height: none; /* Updated for compatibility */
-  }
-
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 428px) {
-  body {
-    background-size: 100%;
-    overflow-x: hidden;
-  }
-
-  .slogan h1 {
-    font-size: 2rem;
-  }
-
-  .slogan p {
-    font-size: 1rem;
-  }
-
-  .custom-image {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .description-main {
-    padding: 1rem;
-  }
-
-  .mission,
-  .vision {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .main-portoflio h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-left: 3rem;
-    margin-top: 10rem;
-  }
-
-  .portfolio-grid {
-    padding: 1rem;
-  }
-
-  .portfolio-item {
-    height: 120px;
-  }
-
-  .prev-btn,
-  .next-btn {
-    padding: 0.3rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  .wrapper .page h2 {
-    font-size: 1em; 
-  }
-
-  .service-content {
-    font-size: 20px; 
-    padding: 1rem; 
-  }
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size */
+        padding: 10px; /* Add padding */
+    }
+    .navbar {
+        display: block; /* Stack navbar items */
+    }
+    .container {
+        width: 100%; /* Full width for containers */
+        padding: 0; /* Remove padding */
+    }
+    /* Add more mobile-specific styles as needed */
 }
