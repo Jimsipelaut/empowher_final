@@ -1,5 +1,5 @@
 /* disini muali media query */
-@media (max-width: 968px) {
+@media (max-width: 992px) {
   body {
     font-size: 1.4rem;
   }
@@ -49,6 +49,7 @@
     width: 80%;
     margin-top: 2rem;
   }
+
   .about-cards {
     flex-direction: column;
     align-items: center;
@@ -69,23 +70,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr); /* Changed to match desktop view */
-    max-width: 100%;
-    padding: 1.5rem;
-  }
-
-  .portfolio-item {
-    height: auto; /* Adjusted to allow flexibility */
-  }
-}
 
 @media (max-width: 428px) {
   body {
     background-size: 100%;
     overflow-x: hidden;
   }
+
   .slogan h1 {
     font-size: 2rem;
   }
@@ -98,100 +89,7 @@
     width: 100%;
     max-width: 300px;
   }
-  .description-main {
-    padding: 1rem;
-  }
 
-  .mission,
-  .vision {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .main-portoflio h2 {
-    text-align: left;
-    margin-bottom: 1rem;
-    margin-left: 4.75rem;
-    margin-top: 10rem;
-  }
-  .portfolio-grid {
-    padding: 1rem;
-  }
-
-  .portfolio-item {
-    height: 120px;
-  }
-
-  .prev-btn,
-  .next-btn {
-    padding: 0.3rem 0.8rem;
-    font-size: 0.8rem;
-  }
-  .wrapper .page h2 {
-    font-size: 1em; 
-}  
-  .service-content {
-  font-size: 20px; 
-  padding: 1rem; 
-    }
-}
-@media (min-width: 360px)
-{
-
-  body {
-  overflow-x: hidden;
-}
-  .member {
-    width: 45%;
-}
-  .wrapper .page h2 {
-    font-size: 1.5em; 
-}  
-  .service-content {
-  font-size: 20px; 
-  padding: 1rem; 
-    }
-  }
-
-
-
-@media (min-width: 460px) {
-  .member {
-    width: 50%;
-  }
-  body {
-  overflow-x: hidden;
-}
-}
-
-@media (min-width: 768px) {
-  .member {
-    width: 30%;
-  }
-}
-
-@media (min-width: 992px) {
-  .member {
-    width: 17%;
-  }
-}
-@media (max-width: 414px) {
-  body {
-    background-size: 100%;
-    overflow-x: hidden;
-  }
-  .slogan h1 {
-    font-size: 2rem;
-  }
-
-  .slogan p {
-    font-size: 1rem;
-  }
-
-  .custom-image {
-    width: 100%;
-    max-width: 300px;
-  }
   .description-main {
     padding: 1rem;
   }
@@ -208,6 +106,7 @@
     margin-left: 3rem;
     margin-top: 10rem;
   }
+
   .portfolio-grid {
     padding: 1rem;
   }
@@ -221,17 +120,13 @@
     padding: 0.3rem 0.8rem;
     font-size: 0.8rem;
   }
+
   .wrapper .page h2 {
     font-size: 1em; 
-}  
-  .service-content {
-  font-size: 20px; 
-  padding: 1rem; 
-    }
-}
-
- @media (max-width: 390px) {
-  body {
-    background-size: 100%;
-    overflow-x: hidden;
   }
+
+  .service-content {
+    font-size: 20px; 
+    padding: 1rem; 
+  }
+}
