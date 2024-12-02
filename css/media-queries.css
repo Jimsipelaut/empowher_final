@@ -84,6 +84,7 @@
 @media (max-width: 428px) {
   body {
     background-size: 100%;
+    overflow-x: hidden;
   }
   .slogan h1 {
     font-size: 2rem;
@@ -136,6 +137,10 @@
 }
 @media (min-width: 360px)
 {
+
+  body {
+  overflow-x: hidden;
+}
   .member {
     width: 45%;
 }
@@ -154,6 +159,9 @@
   .member {
     width: 50%;
   }
+  body {
+  overflow-x: hidden;
+}
 }
 
 @media (min-width: 768px) {
@@ -170,6 +178,7 @@
 @media (max-width: 414px) {
   body {
     background-size: 100%;
+    overflow-x: hidden;
   }
   .slogan h1 {
     font-size: 2rem;
@@ -220,3 +229,9 @@
   padding: 1rem; 
     }
 }
+
+ @media (max-width: 390px) {
+  body {
+    background-size: 100%;
+    overflow-x: hidden;
+  }
