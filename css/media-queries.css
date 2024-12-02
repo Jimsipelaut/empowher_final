@@ -8,12 +8,18 @@
     }
     .navbar {
         display: block; /* Stack navbar items */
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center; /* Center items */
     }
     .container {
         width: 100%; /* Full width for containers */
         padding: 0; /* Remove padding */
         display: flex; /* Use flexbox for layout */
         flex-direction: column; /* Stack items vertically */
+        margin: 0; /* Remove margins */
+    }
+    .section {
+        margin-bottom: 20px; /* Add space between sections */
     }
     img {
         max-width: 100%; /* Ensure images are responsive */
@@ -25,6 +31,8 @@
     button {
         padding: 12px; /* Increase button size for touch */
         font-size: 16px; /* Ensure text is readable */
+        width: 100%; /* Full width for buttons */
+        margin-top: 10px; /* Space above buttons */
     }
 }
 
